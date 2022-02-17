@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Categories"
+        android:id="@+id/state" />
+
+    <item android:title="Maps"
+        android:id="@+id/maps"/>
+
+    <item android:id="@+id/logout"
+        android:title="Log out"/>
+
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FF5733">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/humburger"
+                    android:layout_height="25dp"
+                    android:src="@drawable/hambuger" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="NEWS"
+                    android:textColor="@color/white"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+     <FrameLayout
+         android:id="@+id/frame"
+         android:layout_width="match_parent"
+         android:layout_marginTop="50dp"
+         android:background="@android:color/darker_gray"
+         android:layout_height="match_parent"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigation"
+        android:layout_gravity="start"
+        app:menu="@menu/news_menu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_height="match_parent"/>
+</androidx.drawerlayout.widget.DrawerLayout>
